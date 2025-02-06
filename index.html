@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>MIBF P10 - Mölndals Innebandy Förening</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Search End ***** -->
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Sök" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
+                    <!-- ***** Search End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav" >
+                        <li><a href="index.html" class="active">Hem</a></li>
+                        <li><a href="matcher.html">Matcher</a></li>
+                        <li><a href="statistik.html">Statistik</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li id="profile-link">
+                            <a href="signin.html">Logga in</a>
+                        </li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Simulerad inloggningskontroll (ersätt detta med riktig inloggningslogik)
+        let userLoggedIn = false; // Ändra till true om användaren är inloggad
+        let userName = "Kevin Najar"; // Byt ut detta mot inloggad användares namn
+        
+        let profileLink = document.getElementById("profile-link").querySelector("a");
+        
+        if (userLoggedIn) {
+            profileLink.textContent = userName;
+            profileLink.setAttribute("href", "dashboard.html");
+        }
+    });
+</script>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h6>Välkommen till Mölndals IBF P10</h6>
+                  <h4>Se våra nästkommande <em>matcher</em> här</h4>
+                  <div class="main-button">
+                    <a href="matcher.html">Matcher</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+          <!-- ***** Template code ***** -->
+          color: white; font-family: 'Poppins', sans-serif;
+          <!-- ***** Tabell Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Våra <em>Serier</em></h4>
+                </div>
+                <div class="row">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="tables-container" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                        <div class="table-wrapper" style="flex: 1; padding-right: 20px; border-right: 1px solid rgba(255,255,255,0.2); text-align: center;">
+                          <h3 style="margin-bottom: 10px;">Pantamera Pojkar Röd D</h3>
+                          <table style="width: 100%; text-align: center; border-collapse: collapse;">
+                            <thead>
+                              <tr style="border-bottom: 2px solid white; color: white; font-family: 'Poppins', sans-serif;">
+                                <th>#</th>
+                                <th>Lag</th>
+                                <th>Sp</th>
+                                <th>V</th>
+                                <th>O</th>
+                                <th>F</th>
+                                <th>GM</th>
+                                <th>IM</th>
+                                <th>+/-</th>
+                                <th>Poäng</th>
+                              </tr>
+                            </thead>
+                            <tbody style="color: white; font-family: 'Poppins', sans-serif;">
+                              <tr><td>1</td><td>Team A</td><td>10</td><td>8</td><td>1</td><td>1</td><td>25</td><td>10</td><td>+15</td><td>25</td></tr>
+                              <tr><td>2</td><td>Team B</td><td>10</td><td>7</td><td>1</td><td>2</td><td>22</td><td>12</td><td>+10</td><td>22</td></tr>
+                              <tr><td>3</td><td>Team C</td><td>10</td><td>6</td><td>2</td><td>2</td><td>20</td><td>14</td><td>+6</td><td>20</td></tr>
+                              <tr><td>4</td><td>Team D</td><td>10</td><td>6</td><td>0</td><td>4</td><td>18</td><td>16</td><td>+2</td><td>18</td></tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="table-wrapper" style="flex: 1; padding-left: 20px; text-align: center;">
+                          <h3 style="margin-bottom: 10px;">Pantamera Pojkar Röd F</h3>
+                          <table style="width: 100%; text-align: center; border-collapse: collapse;">
+                            <thead>
+                              <tr style="border-bottom: 2px solid white; color: white; font-family: 'Poppins', sans-serif;">
+                                <th>#</th>
+                                <th>Lag</th>
+                                <th>Sp</th>
+                                <th>V</th>
+                                <th>O</th>
+                                <th>F</th>
+                                <th>GM</th>
+                                <th>IM</th>
+                                <th>+/-</th>
+                                <th>Poäng</th>
+                              </tr>
+                            </thead>
+                            <tbody style="color: white; font-family: 'Poppins', sans-serif;">
+                              <tr><td>5</td><td>Team E</td><td>10</td><td>5</td><td>1</td><td>4</td><td>16</td><td>14</td><td>+2</td><td>16</td></tr>
+                              <tr><td>6</td><td>Team F</td><td>10</td><td>4</td><td>2</td><td>4</td><td>14</td><td>14</td><td>0</td><td>14</td></tr>
+                              <tr><td>7</td><td>Team G</td><td>10</td><td>3</td><td>3</td><td>4</td><td>12</td><td>16</td><td>-4</td><td>12</td></tr>
+                              <tr><td>8</td><td>Team H</td><td>10</td><td>2</td><td>4</td><td>4</td><td>10</td><td>18</td><td>-8</td><td>10</td></tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+                  <div class="col-lg-12">
+                    <div class="main-button" style="border-top: 20px solid transparent;">
+                      <a href="matcher.html">Spelschema</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Tabell End ***** -->
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4>Våra <em>Matcher</em></h4>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
+                  <li><h4>Dota 2</h4><span>Sandbox</span></li>
+                  <li><h4>Date Added</h4><span>24/08/2036</span></li>
+                  <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
+                  <li><h4>Currently</h4><span>Downloaded</span></li>
+                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
+                </ul>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/game-02.jpg" alt="" class="templatemo-item"></li>
+                  <li><h4>Fortnite</h4><span>Sandbox</span></li>
+                  <li><h4>När?</h4><span>Datum</span></li>
+                  <li><h4>Tid Kvar</h4><span><!DOCTYPE HTML>
+                    <html>
+                    <head>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <style>
+                    p {
+                      font-size: 14px;
+                      color: #666;
+                      margin-top: -5px;
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    
+                    <p id="demo"></p>
+                    
+                    <script>
+                      // Sätt datum och tid för matchstart
+                      var countDownDate = new Date("Feb 6, 2025 17:00:00").getTime();
+                      
+                      // Uppdatera nedräkningen varje sekund
+                      var x = setInterval(function() {
+                      
+                        // Hämta nuvarande tid
+                        var now = new Date().getTime();
+                          
+                        // Beräkna tiden kvar till matchstart
+                        var distance = countDownDate - now;
+                          
+                        // Omvandling av tid till dagar, timmar och minuter
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                      
+                        // Om matchen inte har börjat än
+                        if (distance > 0) {
+                          document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m ";
+                        } 
+                        // Om matchen pågår (mindre än 60 min efter start)
+                        else if (distance > -3600000) { // -3600000 ms = -60 min
+                          document.getElementById("demo").innerHTML = "LIVE";
+                        } 
+                        // Om matchen är slut (mer än 60 min efter start)
+                        else {
+                          clearInterval(x);
+                          document.getElementById("demo").innerHTML = "SLUT";
+                        }
+                      
+                      }, 1000);
+                      </script>
+                      
+                    
+                    </body>
+                    </html></span></li>
+                  <li><h4>Currently</h4><span>Downloaded</span></li>
+                  <li><div class="main-border-button"><a href="#">Donwload</a></div></li>
+                </ul>
+              </div>
+              <div class="item last-item">
+                <ul>
+                  <li><img src="assets/images/game-03.jpg" alt="" class="templatemo-item"></li>
+                  <li><h4>CS-GO</h4><span>Sandbox</span></li>
+                  <li><h4>Date Added</h4><span>21/04/2036</span></li>
+                  <li><h4>Hours Played</h4><span>892 H 14 Mins</span></li>
+                  <li><h4>Currently</h4><span>Downloaded</span></li>
+                  <li><div class="main-border-button"><a href="#">Donwloaded</a></div></li>
+                </ul>
+              </div>
+              <div class="item last-item">
+                <ul>
+                  <li><img src="assets/images/game-03.jpg" alt="" class="templatemo-item"></li>
+                  <li><h4>CS-GO</h4><span>Sandbox</span></li>
+                  <li><h4>Date Added</h4><span>21/04/2036</span></li>
+                  <li><h4>Hours Played</h4><span>892 H 14 Mins</span></li>
+                  <li><h4>Currently</h4><span>Downloaded</span></li>
+                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="profile.html">View Your Library</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2025 <a href="#">Mölndals IBF P10</a>. All rights reserved. 
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+
+</html>
